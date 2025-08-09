@@ -1,12 +1,41 @@
-# React + Vite
+# 📒 Ledger Management System (React + Firebase + Zustand + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fast, and secure Ledger Management SaaS application built with **React.js**, **Firebase** (Authentication & Firestore), **Zustand** for state management, and **Tailwind CSS** for styling.
 
-Currently, two official plugins are available:
+This app allows each authenticated user to:
+- Create multiple ledgers.
+- Add credit and debit transactions.
+- View and manage transaction history in real-time.
+- Securely store data in Firestore with user-level access control.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Authentication**  
+  Sign up, log in, and log out using Firebase Authentication.
+
+- **Ledger Management**  
+  Create, edit, and delete ledgers. Each user can have multiple ledgers.
+
+- **Transaction Management**  
+  Add, update, and delete transactions (`credit` or `debit`) with notes, dates, and amounts.
+
+- **Real-Time Updates**  
+  Firestore listeners (`onSnapshot`) keep your data in sync instantly.
+
+- **Secure Access Control**  
+  Firebase security rules ensure only the owner can access their data.
+
+- **Responsive UI**  
+  Styled with the latest Tailwind CSS for a clean and modern look.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: [React.js](https://react.dev/)
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Database & Auth**: [Firebase](https://firebase.google.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Routing**: [React Router](https://reactrouter.com/)
